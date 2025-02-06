@@ -1,3 +1,5 @@
+import ast
+
 def sum_odd_and_even(lst):
 	
 	even = 0
@@ -9,5 +11,6 @@ def sum_odd_and_even(lst):
 			odd += num
 	return [even, odd]
 
-_sum = sum_odd_and_even([-1, -2, -3, -4, -5, -6])
-print(_sum)
+arr = input('Enter an array of numbers.\nThe first element will be the sum of all even numbers, and the second, odd.\n')
+arr = ast.literal_eval(arr)
+print(sum_odd_and_even(arr))
