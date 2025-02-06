@@ -4,5 +4,5 @@ def is_curzon(num):
 	else:
 		return False
 	
-result = input("Type a number to see if it's a Curzon number\n")
+result = int(input("Type a number to see if it's a Curzon number\n"))
 print(is_curzon(result))
