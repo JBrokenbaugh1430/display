@@ -5,7 +5,7 @@ key = str.maketrans({
     # "b":"y",
     # "c":x",
     # and so on so forth. and also do it for the uppercase letters too"
-	#the rest of the code was actually written by me
+	#the rest of the code was actually written by me. not that complicated though
   "a": "z",
   "b": "y",
   "c": "x",
@@ -64,4 +64,5 @@ key = str.maketrans({
 def atbash(txt):
 	return txt.translate(key)
 
-print(atbash("apple"))
+text = input("Type something to cipher\n")
+print(atbash(text))
