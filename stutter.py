@@ -5,3 +5,6 @@ def stutter(word):
    
     
     return first_two + first_two + word + "?" 
+
+word = input("Type a word to stutter\n")
+print(stutter(word))
